@@ -4,7 +4,7 @@ const profile = {
   name: 'Pallavi Shivaji Malekar',
   role: 'M.Tech CSE | Frontend & Web Developer',
   email: 'malekarpallavi1999@gmail.com',
-  phone: '+91 12345 67890',
+  phone: '+91 9373913712',
   location: 'India',
   summary:
     'Driven frontend developer with strong academic foundations in Computer Science, a passion for React, and experience in building polished web experiences and data-driven interfaces.',
