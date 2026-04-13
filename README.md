@@ -50,66 +50,7 @@ Portpolio/
 3. Click **"New Project"** → Select this repository
 4. Deploy → Get live URL instantly
 
-**Vercel automatically detects static files and deploys.**
 
----
-
-### **Option 2: Netlify (2 minutes)**
-
-1. Go to [netlify.com](https://netlify.com)
-2. **Drag & drop** the `Portpolio` folder, OR
-3. Connect GitHub → Select repo → Auto-deploy on each push
-
----
-
-### **Option 3: GitHub Pages (Free)**
-
-1. Create a repository named `portfolio`
-2. Push all files to GitHub
-3. Go to **Settings** → **Pages**
-4. Enable GitHub Pages from `main` branch
-5. Live at: `yourusername.github.io/portfolio`
-
----
-
-## 📝 How to Push to GitHub
-
-### Step 1: Create a GitHub Repository
-1. Go to [github.com](https://github.com)
-2. Click **"New repository"**
-3. Name it: `portfolio` (or `Pallavi-Portfolio`)
-4. **Do NOT initialize README** (we have one)
-5. Click **"Create repository"**
-
-### Step 2: Push Your Code
-
-```bash
-# Navigate to your Portpolio folder
-cd "C:\Users\palla\OneDrive\Desktop\Portpolio"
-
-# Initialize git (if not already done)
-git init
-
-# Add all files
-git add .
-
-# Create initial commit
-git commit -m "Initial portfolio commit - React SPA for 20 LPA interviews"
-
-# Add remote origin (replace with your repo URL)
-git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
-### Step 3: Verify on GitHub
-- Go to your GitHub repo
-- You should see all files (index.html, app.js, style.css, etc.)
-- Files show, live demo button active
-
----
 
 ## 📋 Portfolio Sections
 
