@@ -1,0 +1,24 @@
+{
+  "name": "pallavi-portfolio",
+  "version": "1.0.0",
+  "description": "Professional React portfolio - Pallavi Shivaji Malekar",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "frontend",
+    "fullstack",
+    "resume"
+  ],
+  "author": "Pallavi Shivaji Malekar",
+  "email": "malekarpallavi1999@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pallavi123-gif/portfolio.git"
+  }
+}
