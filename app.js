@@ -27,6 +27,7 @@ const strengths = [
 
 const skills = [
   { title: 'Frontend', items: ['React', 'JavaScript (ES6+)', 'HTML5', 'CSS3'] },
+  { title: 'Backend', items: ['Java', 'Spring Boot', 'REST APIs', 'Microservices'] },
   { title: 'Design', items: ['Responsive UI', 'Accessibility', 'Mobile-first'] },
   { title: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Figma'] },
   { title: 'Data & ML', items: ['Python', 'Pandas', 'Machine Learning', 'Visualization'] },
@@ -37,36 +38,49 @@ const projects = [
     title: 'React Portfolio & Resume Platform',
     description: 'A premium portfolio UI built to communicate impact, skills, and interview readiness for premium software roles.',
     keywords: ['React', 'Responsive', 'Interviewer-friendly'],
+    githubUrl: 'https://github.com/pallavi123-gif/Portpolio-Website',
   },
   {
     title: 'Hospital Management System',
     description: 'Web-based application for managing patient records, appointments, billing, and staff workflows with clear UI and secure data handling.',
     keywords: ['Hospital', 'Management', 'React', 'Database'],
+    githubUrl: '#',
   },
   {
     title: 'Ticket Booking System',
     description: 'Interactive booking portal with seat selection, real-time availability checks, and user-friendly checkout flow.',
     keywords: ['Booking', 'UX', 'JavaScript', 'Web App'],
+    githubUrl: '#',
   },
   {
     title: 'Java Backend Order Processing API',
     description: 'RESTful Java backend service for order processing with Spring Boot, transaction management, and secure business logic.',
     keywords: ['Java', 'Spring Boot', 'API', 'Backend'],
+    githubUrl: '#',
   },
   {
     title: 'Java Microservices Inventory System',
     description: 'Java microservices architecture for inventory control, event-driven updates, and scalable backend operations.',
     keywords: ['Java', 'Microservices', 'Spring Boot', 'Scalable'],
+    githubUrl: '#',
   },
   {
     title: 'Tidal Wave Prediction Prototype',
     description: 'Machine learning proof-of-concept for predicting water level changes using data-driven modeling and visualization.',
     keywords: ['ML', 'Data', 'Python', 'Analytics'],
+    githubUrl: '#',
   },
   {
     title: 'Interactive Dashboard',
     description: 'Data-centric dashboard with reusable components, analytics charts, and responsive interaction patterns.',
     keywords: ['Dashboard', 'UI', 'UX', 'Performance'],
+    githubUrl: '#',
+  },
+  {
+    title: 'PayPal UI Clone',
+    description: 'A React-based clone of PayPal\'s user interface featuring modern components, pages, and styling.',
+    keywords: ['React', 'UI Clone', 'PayPal', 'JavaScript', 'SCSS'],
+    githubUrl: 'https://github.com/pallavi123-gif/Paypal-ui',
   },
 ];
 
@@ -201,7 +215,10 @@ function App() {
             <div className="portfolio-grid">
               {projects.map(project => (
                 <article key={project.title} className="project-card section-card">
-                  <h3>{project.title}</h3>
+                  <div className="project-header">
+                    <h3>{project.title}</h3>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="github-link">GitHub</a>
+                  </div>
                   <p>{project.description}</p>
                   <div className="pill-group">
                     {project.keywords.map(keyword => <Pill key={keyword} text={keyword} />)}
